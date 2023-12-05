@@ -1,0 +1,110 @@
+body{
+    background-color: #5143be;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.shoe-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+    .shoe-container{
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 900px) {
+    .shoe-container{
+        justify-content: center;
+    }
+}
+.shoe-container .shoe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #afa9e1;
+    border-radius: 5%;
+}
+@media (min-width: 900px) {
+    .shoe-container .shoe-item {
+        padding-block: 20px;
+        width: 260px;    
+        margin: 20px 20px;
+    }
+}
+@media (max-width: 900px) {
+    .shoe-container .shoe-item {
+        padding: 10px;
+        width: fit-content;    
+        margin: 20px 5px;
+    }
+}
+.shoe-container .shoe-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+  
+.shoe-container .shoe-item:not(:hover){
+    transition: transform 0.5s ease;
+    transform: scale(1);
+}
+
+
+.shoe-container .shoe-item img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 5%;
+    width: 230px; 
+    height: 230px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.shoe-info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.shoe-info-name{
+    font-size: large;
+    color: #f8f7ff;
+    text-shadow: 0px 3px 5px rgba(0,0,0,0.6);
+}
+.shoe-info-otherinfo{
+    font-size: medium;
+    color: #eeedff;
+    text-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+}
+
+.shoe-info form{
+
+}
+
+.shoe-item form button{
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 0; /* Remove o preenchimento do botão */
+    width: 60px;
+    width: 60px;
+}
+
+.favorite-button-img{
+    width: 60px; 
+    height: 60px;
+}
+
+
+
+
+
+
+
+

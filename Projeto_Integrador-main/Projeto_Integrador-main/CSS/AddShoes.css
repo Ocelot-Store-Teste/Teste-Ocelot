@@ -1,0 +1,205 @@
+body{
+    background-color: #5143be;
+    background-attachment: fixed;
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+a:link {
+color: white;
+}
+
+a:visited {
+color: white;
+}
+
+a:active {
+color: white;
+}
+
+.containerh1{
+    display: flex;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.containerh1 img{
+    width:100px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+   
+}
+
+.containerh1 h1{
+    margin-top: 20px;   
+}
+
+h1{
+    font-family: monospace;
+    font-size: 70px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+h2{
+    margin-top: 0%;
+    color: #ffffff99;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+@media (max-width: 600px) {
+    .form-container{
+        width: 70%;
+    }
+}
+@media (min-width: 600px) {
+    .form-container{
+        width: 70%;
+    }
+}
+
+form{
+    width: 100%;
+}
+
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+@media (max-width: 600px) {
+    .input-box{
+        margin: 5% 0px;
+    }
+}
+@media (min-width: 600px) {
+    .input-box{
+        margin: 30px 0px;
+    }
+}
+
+#input-box-price{
+    display: flex;
+    justify-content: center;
+    margin: 0px 21vw;
+    width: 30%;
+}
+
+form img{
+    filter: drop-shadow(0px 10px 10px rgba(71, 71, 71, 1));
+}
+
+@media (max-width: 600px) {
+    form img{
+        height: 25px;
+        width: 25px;
+        margin: 10px 0px;
+        margin-right: 7px;
+    }
+}
+
+@media (min-width: 600px) {
+    form img{
+        width: 35px;
+        margin: 3px 10px;
+    }
+}
+
+
+input{
+    background-color: transparent;
+    border: none;
+}
+input::placeholder{
+    color: #dbdbdb;
+    text-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+} 
+
+input[type="text"] {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #a19e9e;
+    padding: 5px 0;
+    color: #ffffff;
+}
+input[type="password"] {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #a19e9e;
+    padding: 5px 0;
+    color: #000000;
+}
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 80%;
+    }
+    #input-box-price{
+        display: flex;
+        justify-content: center;
+        margin: 0px 5vw;
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    input[type="text"] {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    input[type="password"] {
+        width: 110%;
+    }
+}
+
+@media (min-width: 600px) {
+    input[type="password"] {
+        width: 70%;
+    }
+}
+
+input[type="submit"] {
+    background-color: white;
+    color: #328590;
+    font-size: large;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.741);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+
+input[type="text"]:focus {
+    outline: none;
+}
+input[type="password"]:focus {
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+  
+input[type="submit"]:not(:hover){
+    transition: transform 0.5s ease;
+    transform: scale(1);
+}
+
+.divsubmit{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
